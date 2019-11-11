@@ -1,0 +1,16 @@
+<!-- <FlexboxLayout width="300" height="300" backgroundColor="lightgray">
+    <Label text="Label 1" width="70" height="70" backgroundColor="red"></Label>
+    <Label text="Label 2" width="70" height="70" backgroundColor="green"></Label>
+    <Label text="Label 3" width="70" height="70" backgroundColor="blue"></Label>
+    <Label text="Label 4" width="70" height="70" backgroundColor="yellow"></Label>
+    <Button text="Terug" [nsRouterLink]="['/home']" pageTransition="slide"></Button>
+</FlexboxLayout> -->
+
+<FlexboxLayout flexDirection="column-reverse" justifyContent="space-around" alignItems="stretch" height="300" width="300"
+    backgroundColor="lightgray">
+    <Label text="Label 1" width="50" height="50" backgroundColor="red"></Label>
+    <Label alignSelf="center" text="Label 2" width="50" height="50" backgroundColor="green"></Label>
+    <Label alignSelf="flex-end" text="Label 3" width="50" height="50" backgroundColor="blue"></Label>
+    <Label text="Label 4" width="50" height="50" backgroundColor="yellow"></Label>
+    <Button text="Terug" [nsRouterLink]="['/home']" pageTransition="slide"></Button>
+</FlexboxLayout>

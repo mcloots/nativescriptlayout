@@ -1,14 +1,23 @@
 import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { Routes } from "@angular/router";
-
-import { ItemsComponent } from "./item/items.component";
-import { ItemDetailComponent } from "./item/item-detail.component";
+import { HomeComponent } from "./home/home.component";
+import { AbsoluteLayoutComponent } from "./absolute-layout/absolute-layout.component";
+import { DockLayoutComponent } from "./dock-layout/dock-layout.component";
+import { FlexboxLayoutComponent } from "./flexbox-layout/flexbox-layout.component";
+import { GridLayoutComponent } from "./grid-layout/grid-layout.component";
+import { StackLayoutComponent } from "./stack-layout/stack-layout.component";
+import { WrapLayoutComponent } from "./wrap-layout/wrap-layout.component";
 
 const routes: Routes = [
-    { path: "", redirectTo: "/items", pathMatch: "full" },
-    { path: "items", component: ItemsComponent },
-    { path: "item/:id", component: ItemDetailComponent }
+    { path: "", redirectTo: "/home", pathMatch: "full" },
+    { path: "home", component: HomeComponent },
+    { path: "absolute", component: AbsoluteLayoutComponent },
+    { path: "dock", component: DockLayoutComponent },
+    { path: "flexbox", component: FlexboxLayoutComponent },
+    { path: "grid", component: GridLayoutComponent },
+    { path: "stack", component: StackLayoutComponent },
+    { path: "wrap", component: WrapLayoutComponent }
 ];
 
 @NgModule({
